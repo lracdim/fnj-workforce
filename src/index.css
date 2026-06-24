@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,500;1,600&family=DM+Serif+Display:ital@1&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'General Sans', 'Inter', sans-serif;
+  --font-accent: 'Fraunces', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #FBF9F4;
+  color: #16201C;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.accent-italic {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.accent-italic.text-gold,
+.accent-italic.text-gold\/20,
+.accent-italic.text-forest {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+}
+
+::selection {
+  background: #C9A227;
+  color: #FBF9F4;
+}
