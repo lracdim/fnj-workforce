@@ -36,6 +36,8 @@ export default {
         display: ["'General Sans'", "Inter", "sans-serif"],
         accent: ["Fraunces", "serif"],
         sans: ["Inter", "system-ui", "sans-serif"],
+        teko: ["Teko", "sans-serif"],
+        kanit: ["Kanit", "sans-serif"],
       },
       keyframes: {
         marquee: {
